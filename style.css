@@ -1,0 +1,51 @@
+#search{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}
+
+.card-header{
+    text-align: center;
+    left: 100%;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    background-color: grey;
+}
+
+div.card-title{
+    background-color: #e25fa7c5;
+    border-color: black;
+}
+
+/*#day1{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}
+
+#day2{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}
+
+#day3{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}
+
+#day4{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}
+
+#day5{
+    background-color: #1a8fa3c7;
+    color: #ffffff;
+    border-color: black;
+}*/
