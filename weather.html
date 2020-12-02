@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="icon" type="image/png" href="./assets/weather-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+    <div class="container is-fluid">
+        <div class="header">
+            <h1 class="head-caption">Weather Dashboard</h1>
+        </div>
+        <br><br><br>
+        <div class="field">
+            <div class="control">
+              <input id="searchInput" class="input is-primary" type="text submit" placeholder="Search for a city">
+                <button class="button is-black" id="search" type="submit">
+                 Go!
+                </button>
+            </div>
+        </div>
+        <div class="notification is-primary">
+            <div class="card">
+                <div id="map" class="card-image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <p id="thumb-photo">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p id="city-name" class="title is-4"></p>
+                      <p class="subtitle is-6"></p>
+                    </div>
+                  </div>
+
+                <footer class="card-footer">
+                    <div class="buttons are-large">
+                       <div class = "column">
+                        <button class="button is-primary is-fullwidth is-rounded" id="temp" href="#" class="card-footer-item">Click to see this week's weather!</button>
+                       </div>
+                    </div> 
+                </footer>
+                <div class="modal" id="weather">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <h1 class="modal-card-title">5-Day Forecast</h1>      
+                      </header>
+                      <section id="weather-content" class="modal-card-body">
+                        <!-- Content ... -->
+                        <div class="row p-1">
+                            <div id="day1" class="card p-1 m-3 card text-white bg-info mb-3">
+                              <h1>Day 1</h1>  
+                              <p></p>
+                              <img/>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                            </div>
+                            <div id="day2" class="card p-1 m-3 card text-white bg-info mb-3">
+                              <h1>Day 2</h1>  
+                              <p></p>
+                              <img/>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                            </div>
+                            <div id="day3" class="card p-1 m-3 card text-white bg-info mb-3">
+                              <h1>Day 3</h1>  
+                              <p></p>
+                              <img/>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                            </div>
+                            <div id="day4" class="card p-1 m-3 card text-white bg-info mb-3">
+                              <h1>Day 4</h1>  
+                              <p></p>
+                              <img/>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                            </div>
+                            <div id="day5" class="card p-1 m-3 card text-white bg-info mb-3">
+                              <h1>Day 5</h1>
+                              <p></p>
+                              <img/>
+                              <p></p>
+                              <p></p>
+                              <p></p>
+                            </div>
+                          </div>
+
+                      </section>
+                      <footer class="modal-card-foot">
+                        <button class="button is-success" id="ok">OK</button>
+                      </footer>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+<script src="script.js"></script>    
+</body>
+</html>
